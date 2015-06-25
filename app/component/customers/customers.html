@@ -1,0 +1,61 @@
+<div class="row" ng-hide="isEdit || isCreate">
+    <div class="col-md-10">
+        <div class="navbar">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a  ng-click="create()">
+                        <span class="glyphicon glyphicon-plus"> </span>
+                        Add customer
+                    </a>
+                </li>
+            </ul>
+            <div class="navbar-form navbar-right">
+                <div class="form-group">
+                    <label class="navbarText col-sm-2">Sort:</label>
+                    <div class="col-sm-10">
+                        <a href="" ng-click="reverse = !reverse">By name</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<customers-update></customers-update>
+
+<div ng-hide="isCreate || isEdit" class="row cardContainer show-hide-animation">
+    <div class="col-sm-6 col-md-4 col-lg-3" customer="customer" data-ng-repeat="customer in customers | orderBy : 'name' : reverse">
+        <div class="card">
+            <button class="btn close cardClose" title="Delete Customer" ng-click="delete(customer)">&times;</button>
+            <div class="cardHeader">
+                <a ng-click="edit(customer)" href="#/customeredit" class="white">{{customer.firstName + ' ' + customer.lastName}}
+                    <i class="icon-edit icon-white editIcon">
+                    </i>
+                </a>
+            </div>
+            <div class="cardBody">
+                <div class="clearfix">
+                    <div class="pull-left cardBodyLeft">
+                        <a ng-click="edit(customer)" href="#/customeredit" class="white">
+                            <img ng-src="app/component/images/{{customer.gender | lowercase}}.png" class="cardImage" />
+                        </a>
+                    </div>
+                    <div class="pull-left cardBodyRight">
+                        <div class="cardBodyContent">City: {{customer.city}}</div>
+                        <div>
+                            {{ customer.orders.length }}
+                            <span ng-pluralize count="customer.orders.length" when="{'0': 'No orders', '1': 'Order','other': 'Orders'}"></span>
+                            <customer-orders/>
+                            <!--<a ui-sref="detail({id: customer.id})" class="btn-link">-->
+                                <!--{{ customer.orders.length }}-->
+                                <!--<span ng-pluralize count="customer.orders.length"-->
+                                      <!--when="{'1': 'Order','other': 'Orders'}">-->
+                                <!--</span>-->
+                            <!--</a>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

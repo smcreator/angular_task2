@@ -1,4 +1,4 @@
-angular.module('menuModule',[])
+angular.module('component.menu-module',[])
 .directive('menu',function(){
     return{
         restrict:"E",
@@ -6,7 +6,7 @@ angular.module('menuModule',[])
         templateUrl: 'app/component/menu/menu.html',
         link: function(scope){
             scope.active='customers';
-            scope.title = 'Customer orders management app';
+            scope.title = 'Customers management';
         }
     }
 });

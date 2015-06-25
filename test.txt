@@ -1,0 +1,40 @@
+[11:02:22] Warning: gulp version mismatch:
+[11:02:22] Global gulp is 3.9.0
+[11:02:22] Local gulp is 3.8.11
+[11:02:23] Using gulpfile d:\DEV\ANGULAR\TASK3\CustomerOrders\gulpfile.js
+[11:02:23] Starting 'test'...
+[32mINFO [karma]: [39mKarma v0.12.37 server started at http://localhost:9876/
+[32mINFO [launcher]: [39mStarting browser PhantomJS
+[32mINFO [PhantomJS 1.9.8 (Windows 7 0.0.0)]: [39mConnected on socket tiaPy-OtKU3LS-qIGG8D with id 55992552
+[33mWARN [web-server]: [39m404: /app/component/first-component/cat1.png
+PhantomJS 1.9.8 (Windows 7 0.0.0): Executed 0 of 8 SUCCESS (0 secs / 0 secs)
+[1A[2KPhantomJS 1.9.8 (Windows 7 0.0.0): Executed 1 of 8 SUCCESS (0 secs / 0.021 secs)
+[1A[2KPhantomJS 1.9.8 (Windows 7 0.0.0): Executed 2 of 8 SUCCESS (0 secs / 0.026 secs)
+[1A[2KPhantomJS 1.9.8 (Windows 7 0.0.0): Executed 3 of 8 SUCCESS (0 secs / 0.028 secs)
+[1A[2KLOG: '<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a href="#">
+                <img src="" alt="logo">
+                <span class="ng-binding">Customer orders management app</span>
+            </a>
+        </div>
+        <div>
+            <ul class="nav navbar-nav nav-pills" data-menu-highlighter="" data-highlight-class-name="active">
+                <li><a ng-class="{active: active === 'customers'}" href="customers" class="active">Customers</a></li>
+                <li><a ng-class="{'active': active === 'orders'}" href="orders">Orders</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>'
+PhantomJS 1.9.8 (Windows 7 0.0.0): Executed 3 of 8 SUCCESS (0 secs / 0.028 secs)
+[1A[2KPhantomJS 1.9.8 (Windows 7 0.0.0): Executed 4 of 8 SUCCESS (0 secs / 0.037 secs)
+[1A[2KPhantomJS 1.9.8 (Windows 7 0.0.0): Executed 5 of 8 SUCCESS (0 secs / 0.048 secs)
+[1A[2KLOG: 'Factory is correct.'
+PhantomJS 1.9.8 (Windows 7 0.0.0): Executed 5 of 8 SUCCESS (0 secs / 0.048 secs)
+[1A[2KPhantomJS 1.9.8 (Windows 7 0.0.0): Executed 6 of 8 SUCCESS (0 secs / 0.05 secs)
+[1A[2KLOG: []
+PhantomJS 1.9.8 (Windows 7 0.0.0): Executed 6 of 8 SUCCESS (0 secs / 0.05 secs)
+[1A[2KPhantomJS 1.9.8 (Windows 7 0.0.0): Executed 7 of 8 SUCCESS (0 secs / 0.053 secs)
+[1A[2KPhantomJS 1.9.8 (Windows 7 0.0.0): Executed 7 of 8 SUCCESS (0.005 secs / 0.053 secs)
+[11:02:25] Finished 'test' after 2.06 s

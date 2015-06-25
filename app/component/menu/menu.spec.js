@@ -1,7 +1,7 @@
-describe('menu-test',function(){
+describe('component.menu-module-test',function(){
     beforeEach(module('templates'));
     beforeEach(module('ui.router'));
-    beforeEach(module('menuModule'));
+    beforeEach(module('component.menu-module'));
 
     it('menu directive should be defined', inject(function(directiveBuilder){
             var directive = directiveBuilder.build('<menu><menu/>');
